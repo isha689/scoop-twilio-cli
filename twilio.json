@@ -5,11 +5,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/isha689/twilio-cli/releases/latest/download/twilio-win32-x64.tar.xz",
+            "url": "https://github.com/isha689/twilio-cli/releases/download/$version/twilio-win32-x64.tar.xz",
             "hash": "e03f2f907172c436e4e828706a78980a52accc7cce5c87352accbeb25ec57608"
         },
         "32bit": {
-            "url": "https://github.com/isha689/twilio-cli/releases/latest/download/twilio-win32-x86.tar.xz",
+            "url": "https://github.com/isha689/twilio-cli/releases/download/$version/twilio-win32-x86.tar.xz",
             "hash": "df1aa2be6ffacb77d8ebcfd1d2400b384d054c61e94a88913ca911d7d2798e92"
         }
     },
@@ -21,16 +21,16 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/isha689/twilio-cli/releases/latest/download/twilio-win32-x64.tar.xz",
+                "url": "https://github.com/isha689/twilio-cli/releases/download/$version/twilio-win32-x64.tar.xz",
                 "hash": {
-                    "url": "https://github.com/isha689/twilio-cli/releases/latest/download/win32-x64",
+                    "url": "https://github.com/isha689/twilio-cli/releases/download/$version/win32-x64",
                     "jsonpath": "$.sha256xz"
                 }
             },
             "32bit": {
-                "url": "https://github.com/isha689/twilio-cli/releases/latest/download/twilio-win32-x86.tar.xz",
+                "url": "https://github.com/isha689/twilio-cli/releases/download/$version/twilio-win32-x86.tar.xz",
                 "hash": {
-                    "url": "https://github.com/isha689/twilio-cli/releases/latest/download/win32-x86",
+                    "url": "https://github.com/isha689/twilio-cli/releases/download/$version/in32-x86",
                     "jsonpath": "$.sha256xz"
                 }
             }
