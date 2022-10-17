@@ -15,7 +15,7 @@
     },
     "bin": "twilio\\bin\\twilio.cmd",
     "checkver": {
-        "url": "https://twilio-cli-prod.s3.amazonaws.com/channels/draft/version",
+        "url": "https://github.com/isha689/twilio-cli/releases/latest/download/version",
         "jsonpath": "$.version"
     },
     "autoupdate": {
