@@ -30,7 +30,7 @@
             "32bit": {
                 "url": "https://github.com/isha689/twilio-cli/releases/download/$version/twilio-win32-x86.tar.xz",
                 "hash": {
-                    "url": "https://github.com/isha689/twilio-cli/releases/download/$version/in32-x86",
+                    "url": "https://github.com/isha689/twilio-cli/releases/download/$version/win32-x86",
                     "jsonpath": "$.sha256xz"
                 }
             }
