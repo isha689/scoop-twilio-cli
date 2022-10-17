@@ -1,35 +1,36 @@
 {
-    "version": "5.1.8-draft.1.b949eb3",
+    "version": "5.1.7-draft.1.b949eb3",
     "description": "Unleash the power of Twilio from your command prompt!",
     "homepage": "https://github.com/twilio/twilio-cli",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/isha689/twilio-cli/releases/latest/download/twilio-win32-x64.tar.xz",
+            "url": "https://github.com/isha689/twilio-cli/releases/download/$version/twilio-win32-x64.tar.xz",
             "hash": "3a917a659ed3c2501866cfd4f11fac94e9a6dde394dc7e02f3ff1c643c6afb20"
         },
         "32bit": {
-            "url": "https://github.com/isha689/twilio-cli/releases/latest/download/twilio-win32-x86.tar.xz",
+            "url": "https://github.com/isha689/twilio-cli/releases/download/$version/twilio-win32-x86.tar.xz",
             "hash": "56f9c4a3ba5bde61ff3acfc4a374b112aa56e986ca7dea0d370e506a79a592f4"
         }
     },
     "bin": "twilio\\bin\\twilio.cmd",
     "checkver": {
-        "github": "https://github.com/isha689/twilio-cli"
+        "url": "https://github.com/isha689/twilio-cli/releases/download/$version/version",
+        "jsonpath": "$.version"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/isha689/twilio-cli/releases/latest/download/twilio-win32-x64.tar.xz",
+                "url": "https://github.com/isha689/twilio-cli/releases/download/$version/twilio-win32-x64.tar.xz",
                 "hash": {
-                    "url": "https://github.com/isha689/twilio-cli/releases/latest/download/win32-x64",
+                    "url": "https://github.com/isha689/twilio-cli/releases/download/$version/win32-x64",
                     "jsonpath": "$.sha256xz"
                 }
             },
             "32bit": {
-                "url": "https://github.com/isha689/twilio-cli/releases/latest/download/twilio-win32-x86.tar.xz",
+                "url": "https://github.com/isha689/twilio-cli/releases/download/$version/twilio-win32-x86.tar.xz",
                 "hash": {
-                    "url": "https://github.com/isha689/twilio-cli/releases/latest/download/win32-x86",
+                    "url": "https://github.com/isha689/twilio-cli/releases/download/$version/win32-x86",
                     "jsonpath": "$.sha256xz"
                 }
             }
